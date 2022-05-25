@@ -8,13 +8,24 @@
         android:id="@+id/nav_pokedex"
         android:name="com.example.smartumbrella.fragment_weather"
         android:label="weather"
-        tools:layout="@layout/fragment_weather"/>
+        tools:layout="@layout/fragment_weather">
+        <action
+            android:id="@+id/action_nav_pokedex_to_navigation_teams"
+            app:destination="@id/navigation_teams" />
+        <action
+            android:id="@+id/action_nav_pokedex_to_nav_moves"
+            app:destination="@id/nav_moves" />
+    </fragment>
 
     <fragment
         android:id="@+id/navigation_teams"
         android:name="com.example.smartumbrella.fragment_tracker"
         android:label="tracker"
-        tools:layout="@layout/fragment_tracker" />
+        tools:layout="@layout/fragment_tracker" >
+        <action
+            android:id="@+id/action_navigation_teams_to_nav_moves"
+            app:destination="@id/nav_moves" />
+    </fragment>
 
     <fragment
         android:id="@+id/nav_moves"
