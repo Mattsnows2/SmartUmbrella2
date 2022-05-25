@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation">
+
+    <fragment
+        android:id="@+id/nav_pokedex"
+        android:name="com.example.smartumbrella.fragment_weather"
+        android:label="weather"
+        tools:layout="@layout/fragment_weather"/>
+
+    <fragment
+        android:id="@+id/navigation_teams"
+        android:name="com.example.smartumbrella.fragment_tracker"
+        android:label="tracker"
+        tools:layout="@layout/fragment_tracker" />
+
+    <fragment
+        android:id="@+id/nav_moves"
+        android:name="com.example.smartumbrella.fragment_information"
+        android:label="information"
+        tools:layout="@layout/fragment_information" />
+
+</navigation>
