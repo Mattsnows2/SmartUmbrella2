@@ -11,6 +11,9 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
+            android:name=".UserChoice"
+            android:exported="true" />
+        <activity
             android:name=".LoginActivity"
             android:exported="true" />
         <activity
@@ -18,9 +21,6 @@
             android:exported="true" />
         <activity
             android:name=".HomePage"
-            android:exported="true" />
-        <activity
-            android:name=".UserChoice"
             android:exported="true" />
         <activity
             android:name=".MainActivity"

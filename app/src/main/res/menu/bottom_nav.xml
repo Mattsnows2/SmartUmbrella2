@@ -10,4 +10,5 @@
         android:id="@+id/navigation_teams"
 
         android:title="teams" />
+
 </menu>

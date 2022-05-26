@@ -2,35 +2,79 @@
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/navigation">
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_pokedex">
 
     <fragment
         android:id="@+id/nav_pokedex"
-        android:name="com.example.smartumbrella.fragment_weather"
-        android:label="weather"
-        tools:layout="@layout/fragment_weather">
-        <action
-            android:id="@+id/action_nav_pokedex_to_navigation_teams"
-            app:destination="@id/navigation_teams" />
-        <action
-            android:id="@+id/action_nav_pokedex_to_nav_moves"
-            app:destination="@id/nav_moves" />
-    </fragment>
+        android:name="com.example.smartumbrella.PokedexFragment"
+        android:label="title_pokedex"
+        tools:layout="@layout/fragment_pokedex" />
 
     <fragment
         android:id="@+id/navigation_teams"
-        android:name="com.example.smartumbrella.fragment_tracker"
-        android:label="tracker"
-        tools:layout="@layout/fragment_tracker" >
-        <action
-            android:id="@+id/action_navigation_teams_to_nav_moves"
-            app:destination="@id/nav_moves" />
-    </fragment>
+        android:name="com.example.smartumbrella.TeamsFragment"
+        android:label="title_teams"
+        tools:layout="@layout/fragment_teams" />
 
     <fragment
         android:id="@+id/nav_moves"
-        android:name="com.example.smartumbrella.fragment_information"
-        android:label="information"
-        tools:layout="@layout/fragment_information" />
+        android:name="com.example.smartumbrella.MovesFragment"
+        android:label="menu_moves"
+        tools:layout="@layout/fragment_moves" />
+
+    <fragment
+        android:id="@+id/nav_abilities"
+        android:name="com.example.smartumbrella.AbilitiesFragment"
+        android:label="enu_abilities"
+        tools:layout="@layout/fragment_abilities" />
+
+    <fragment
+        android:id="@+id/nav_items"
+        android:name="com.example.smartumbrella.ItemsFragment"
+        android:label="menu_items"
+        tools:layout="@layout/fragment_items" />
+
+    <fragment
+        android:id="@+id/nav_locations"
+        android:name="com.example.smartumbrella.LocationsFragment"
+        android:label="menu_locations"
+        tools:layout="@layout/fragment_locations" />
+
+    <fragment
+        android:id="@+id/nav_natures"
+        android:name="com.example.smartumbrella.NaturesFragment"
+        android:label="menu_natures"
+        tools:layout="@layout/fragment_natures" />
+
+    <fragment
+        android:id="@+id/nav_type_chart"
+        android:name="com.example.smartumbrella.TypeChartFragment"
+        android:label="menu_type_chart"
+        tools:layout="@layout/fragment_type_chart" />
+
+    <fragment
+        android:id="@+id/nav_iv_calculator"
+        android:name="com.example.smartumbrella.IVCalculatorFragment"
+        android:label="menu_iv_calculator"
+        tools:layout="@layout/fragment_iv_calculator" />
+
+    <fragment
+        android:id="@+id/nav_about"
+        android:name="com.example.smartumbrella.AboutFragment"
+        android:label="menu_about"
+        tools:layout="@layout/fragment_about" />
+
+    <fragment
+        android:id="@+id/nav_help_and_feedback"
+        android:name="com.example.smartumbrella.HelpAndFeedbackFragment"
+        android:label="menu_help_and_feedback"
+        tools:layout="@layout/fragment_help_and_feedback" />
+
+    <fragment
+        android:id="@+id/nav_settings"
+        android:name="com.example.smartumbrella.SettingsFragment"
+        android:label="menu_settings"
+        tools:layout="@layout/fragment_settings" />
 
 </navigation>
