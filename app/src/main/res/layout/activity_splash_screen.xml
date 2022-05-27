@@ -14,7 +14,8 @@
         android:layout_marginTop="300dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/goutte" />
+        app:srcCompat="@drawable/goutte"
+        android:contentDescription="@string/drop" />
 
     <ImageView
         android:id="@+id/imageGoutte2"
@@ -24,7 +25,8 @@
         android:layout_marginTop="188dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/goutte" />
+        app:srcCompat="@drawable/goutte"
+        android:contentDescription="@string/drop" />
 
     <ImageView
         android:id="@+id/imageGoutte3"
@@ -34,7 +36,8 @@
         android:layout_marginTop="308dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/goutte" />
+        app:srcCompat="@drawable/goutte"
+        android:contentDescription="@string/drop" />
 
     <ImageView
         android:id="@+id/imageGoutte4"
@@ -44,7 +47,8 @@
         android:layout_marginTop="188dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/goutte" />
+        app:srcCompat="@drawable/goutte"
+        android:contentDescription="@string/drop" />
 
     <ImageView
         android:id="@+id/imageUmbrella2"
@@ -54,5 +58,6 @@
         android:layout_marginBottom="336dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:srcCompat="@drawable/umbrella2" />
+        app:srcCompat="@drawable/umbrella2"
+        android:contentDescription="@string/umbrella" />
 </androidx.constraintlayout.widget.ConstraintLayout>

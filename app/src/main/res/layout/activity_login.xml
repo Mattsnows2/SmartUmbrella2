@@ -15,11 +15,11 @@
         android:text="@string/title"
         android:textColor="@color/black"
 
-        android:textSize="32dp"
+        android:textSize="32sp"
         app:layout_constraintBottom_toTopOf="@+id/editTextLoginEmail"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.496"
-        app:layout_constraintStart_toStartOf="parent"></TextView>
+        app:layout_constraintStart_toStartOf="parent" />
 
 
     <EditText
@@ -29,8 +29,10 @@
         android:layout_marginBottom="368dp"
 
         android:hint="@string/email"
+        android:importantForAutofill="no"
         app:layout_constraintBottom_toBottomOf="parent"
-        tools:layout_editor_absoluteX="0dp" />
+        tools:layout_editor_absoluteX="0dp"
+        android:inputType="textEmailAddress" />
 
     <EditText
         android:id="@+id/editTextLoginPassword"
@@ -38,6 +40,7 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="268dp"
         android:hint="@string/password"
+        android:importantForAutofill="no"
 
         android:inputType="textPassword"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -65,7 +68,8 @@
         android:layout_marginEnd="156dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextLoginPassword"
-        app:srcCompat="@drawable/ic_baseline_fingerprint_24" />
+        app:srcCompat="@drawable/ic_baseline_fingerprint_24"
+        android:contentDescription="@string/fingerprint" />
 
     <ImageView
         android:id="@+id/imageView3"
@@ -75,6 +79,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/title"
-        app:srcCompat="@drawable/umbrella" />
+        app:srcCompat="@drawable/umbrella"
+        android:contentDescription="@string/umbrella" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

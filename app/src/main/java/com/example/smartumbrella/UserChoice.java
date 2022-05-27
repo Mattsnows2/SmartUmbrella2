@@ -1,5 +1,6 @@
 package com.example.smartumbrella;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -71,6 +72,12 @@ public class UserChoice extends AppCompatActivity {
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
+
+        if(item.getItemId() == R.id.nav_account) {
+                Intent intent = new Intent(UserChoice.this, AccountActivity.class);
+                startActivity(intent);
+                return true;
+        }
         return NavigationUI.onNavDestinationSelected(item, navController) || super.onOptionsItemSelected(item);
     }
 }

@@ -36,13 +36,18 @@
         <entry key="..\:/Users/matus/git/SmartUmbrella2/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1" />
         <entry key="..\:/Users/matus/git/SmartUmbrella2/app/src/main/res/drawable/ic_launcher_foreground.xml" value="0.1" />
         <entry key="..\:/Users/matus/git/SmartUmbrella2/app/src/main/res/layout/activity_account.xml" value="0.36666666666666664" />
-        <entry key="..\:/Users/matus/git/SmartUmbrella2/app/src/main/res/layout/activity_home_page.xml" value="0.358695652173913" />
+        <entry key="..\:/Users/matus/git/SmartUmbrella2/app/src/main/res/layout/activity_home_page.xml" value="0.1" />
+        <entry key="..\:/Users/matus/git/SmartUmbrella2/app/src/main/res/layout/activity_login.xml" value="0.1" />
         <entry key="..\:/Users/matus/git/SmartUmbrella2/app/src/main/res/layout/activity_main.xml" value="0.17798913043478262" />
+        <entry key="..\:/Users/matus/git/SmartUmbrella2/app/src/main/res/layout/activity_register.xml" value="0.17916666666666667" />
+        <entry key="..\:/Users/matus/git/SmartUmbrella2/app/src/main/res/layout/activity_splash_screen.xml" value="0.16" />
+        <entry key="..\:/Users/matus/git/SmartUmbrella2/app/src/main/res/layout/activity_user_choice.xml" value="0.17831813576494426" />
         <entry key="..\:/Users/matus/git/SmartUmbrella2/app/src/main/res/layout/fragment_help_and_feedback.xml" value="0.358695652173913" />
         <entry key="..\:/Users/matus/git/SmartUmbrella2/app/src/main/res/layout/fragment_items.xml" value="0.358695652173913" />
         <entry key="..\:/Users/matus/git/SmartUmbrella2/app/src/main/res/layout/fragment_locations.xml" value="0.358695652173913" />
+        <entry key="..\:/Users/matus/git/SmartUmbrella2/app/src/main/res/layout/fragment_settings.xml" value="0.18802083333333333" />
         <entry key="..\:/Users/matus/git/SmartUmbrella2/app/src/main/res/layout/fragment_tracker.xml" value="0.17831813576494426" />
-        <entry key="..\:/Users/matus/git/SmartUmbrella2/app/src/main/res/layout/fragment_weather.xml" value="0.5" />
+        <entry key="..\:/Users/matus/git/SmartUmbrella2/app/src/main/res/layout/fragment_weather.xml" value="0.17222222222222222" />
         <entry key="..\:/Users/matus/git/SmartUmbrella2/app/src/main/res/layout/navigation_drawer_header.xml" value="0.17831813576494426" />
         <entry key="..\:/Users/matus/git/SmartUmbrella2/app/src/main/res/menu/appbar.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/matus/git/SmartUmbrella2/app/src/main/res/menu/bottom_nav.xml" value="0.36666666666666664" />
