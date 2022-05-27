@@ -23,7 +23,6 @@ public class UserChoice extends AppCompatActivity {
     AppBarConfiguration appBarConfiguration;
     DrawerLayout drawerLayout;
     NavigationView navigationDrawer;
-    BottomNavigationView bottomNavigationView;
     Toolbar toolbar;
 
     @Override
@@ -37,7 +36,6 @@ public class UserChoice extends AppCompatActivity {
     private void initViews() {
         drawerLayout = findViewById(R.id.drawer_layout);
         navigationDrawer = findViewById(R.id.navigation_drawer);
-        bottomNavigationView = findViewById(R.id.bottom_navigation_view);
         toolbar = findViewById(R.id.toolbar);
     }
 
@@ -46,26 +44,12 @@ public class UserChoice extends AppCompatActivity {
         setSupportActionBar(toolbar);
 
         appBarConfiguration = new AppBarConfiguration.Builder(
-                R.id.nav_pokedex,
-                R.id.navigation_teams)
+                R.id.nav_weather)
                 .setOpenableLayout(drawerLayout)
                 .build();
 
         NavigationUI.setupActionBarWithNavController(this, navController, appBarConfiguration);
-        NavigationUI.setupWithNavController(bottomNavigationView, navController);
         NavigationUI.setupWithNavController(navigationDrawer, navController);
-        setBottomNavigationVisibility();
-    }
-
-    private void setBottomNavigationVisibility() {
-        navController.addOnDestinationChangedListener((controller, destination, arguments) -> {
-            final int id = destination.getId();
-            if (id == R.id.nav_pokedex || id == R.id.navigation_teams) {
-                bottomNavigationView.setVisibility(View.VISIBLE);
-            } else {
-                bottomNavigationView.setVisibility(View.GONE);
-            }
-        });
     }
 
     @Override

@@ -3,27 +3,21 @@ package com.example.smartumbrella;
 import static androidx.biometric.BiometricManager.Authenticators.BIOMETRIC_STRONG;
 import static androidx.biometric.BiometricManager.Authenticators.DEVICE_CREDENTIAL;
 
+import android.content.Intent;
+import android.os.Bundle;
+import android.provider.Settings;
+import android.util.Log;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.ImageView;
+import android.widget.Toast;
+
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.biometric.BiometricManager;
 import androidx.biometric.BiometricPrompt;
 import androidx.core.content.ContextCompat;
 
-import android.content.Intent;
-import android.media.Image;
-import android.os.Bundle;
-import android.os.Handler;
-import android.provider.Settings;
-import android.util.Log;
-import android.view.View;
-import android.widget.Button;
-import android.widget.EditText;
-import android.widget.ImageView;
-import android.widget.Toast;
-
-import com.google.android.gms.tasks.OnCompleteListener;
-import com.google.android.gms.tasks.Task;
-import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 
@@ -72,12 +66,7 @@ public class LoginActivity extends AppCompatActivity {
 
 
 
-        buttonSingin.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                signIn(editTextEmail.getText().toString(), editTextPassword.getText().toString());
-            }
-        });
+        buttonSingin.setOnClickListener(v -> signIn(editTextEmail.getText().toString(), editTextPassword.getText().toString()));
 
         executor = ContextCompat.getMainExecutor(this);
         biometricPrompt = new BiometricPrompt(LoginActivity.this,
@@ -123,29 +112,26 @@ public class LoginActivity extends AppCompatActivity {
 
     public void signIn(String email, String password){
         mAuth.signInWithEmailAndPassword(email, password)
-                .addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
-                    @Override
-                    public void onComplete(@NonNull Task<AuthResult> task) {
-                        if (task.isSuccessful()) {
-                            // Sign in success, update UI with the signed-in user's information
+                .addOnCompleteListener(this, task -> {
+                    if (task.isSuccessful()) {
+                        // Sign in success, update UI with the signed-in user's information
 
-                            FirebaseUser user = mAuth.getCurrentUser();
+                        FirebaseUser user = mAuth.getCurrentUser();
 
 
 
 
-                                    Intent intent=new Intent(LoginActivity.this, MainActivity.class);
-                                    startActivity(intent);
+                                Intent intent=new Intent(LoginActivity.this, MainActivity.class);
+                                startActivity(intent);
 
 
 
-                            updateUI(user);
-                        } else {
-                            // If sign in fails, display a message to the user.
-                            Log.w("yo", "createWithEmail:failure", task.getException());
-                            Toast.makeText(LoginActivity.this,"Authentication failed", Toast.LENGTH_LONG).show();
-                            updateUI(null);
-                        }
+                        updateUI(user);
+                    } else {
+                        // If sign in fails, display a message to the user.
+                        Log.w("yo", "createWithEmail:failure", task.getException());
+                        Toast.makeText(LoginActivity.this,"Authentication failed", Toast.LENGTH_LONG).show();
+                        updateUI(null);
                     }
                 });
 

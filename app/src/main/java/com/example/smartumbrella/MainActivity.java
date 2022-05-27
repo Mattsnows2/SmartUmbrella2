@@ -25,23 +25,24 @@ import java.text.DecimalFormat;
 
 public class MainActivity extends AppCompatActivity {
 
-    EditText etCity, etCountry;
+    /*EditText etCity, etCountry;
     TextView tvResult;
     private final String url = "https://api.openweathermap.org/data/2.5/weather";
     private final String appid="70101acd2500c3938b8552a94e412071";
-    DecimalFormat df = new DecimalFormat("#.##");
+    DecimalFormat df = new DecimalFormat("#.##");*/
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
+       /* super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-       etCity = findViewById(R.id.etCity);
+        etCity = findViewById(R.id.etCity);
         etCountry=findViewById(R.id.etCountry);
-        tvResult=findViewById(R.id.tvResult);
+        tvResult=findViewById(R.id.tvResult);*/
 
+        super.onCreate(savedInstanceState);
     }
 
-    public void getWeatherDetails(View view) {
+   /* public void getWeatherDetails(View view) {
     Log.d("fsh","qsdg");
         String tempUrl="";
         String city = etCity.getText().toString().trim();
@@ -107,5 +108,5 @@ public class MainActivity extends AppCompatActivity {
             RequestQueue requestQueue = Volley.newRequestQueue(getApplicationContext());
             requestQueue.add(stringRequest);
         }
-    }
+    }*/
 }
