@@ -51,6 +51,8 @@ dependencies {
     implementation 'com.google.firebase:firebase-database'
     implementation 'com.google.firebase:firebase-auth'
     implementation 'com.github.blocoio:faker:1.2.9'
+    implementation 'androidx.biometric:biometric:1.1.0'
+    implementation 'com.google.android.material:material:1.0.0-beta01'
    // implementation 'com.google.android.gms:play-services-ads:20.3.0'
 
 }

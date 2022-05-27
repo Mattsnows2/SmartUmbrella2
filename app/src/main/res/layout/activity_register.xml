@@ -6,33 +6,62 @@
     android:layout_height="match_parent"
     tools:context=".RegisterActivity">
 
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="268dp"
+        android:text="@string/title"
+
+        android:textColor="@color/black"
+
+        android:textSize="32dp"
+        app:layout_constraintBottom_toTopOf="@+id/emailEditText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"></TextView>
+
     <EditText
         android:id="@+id/emailEditText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="636dp"
+        android:layout_marginBottom="320dp"
         android:text="email"
         app:layout_constraintBottom_toBottomOf="parent"
-        tools:layout_editor_absoluteX="27dp"></EditText>
-
+        tools:layout_editor_absoluteX="0dp"></EditText>
 
     <EditText
         android:id="@+id/passwordEditText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="432dp"
+        android:layout_marginTop="60dp"
+
+
         android:text="password"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/emailEditText"
-        app:layout_constraintVertical_bias="1.0"
         tools:layout_editor_absoluteX="0dp"></EditText>
 
     <Button
         android:id="@+id/buttonRegister"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="124dp"
+        android:layout_marginTop="48dp"
+        android:backgroundTint="#677dac"
+        android:drawableTop="@drawable/rocket"
         android:text="register"
+        android:textColor="@color/white"
         app:layout_constraintTop_toBottomOf="@+id/passwordEditText"
-        tools:layout_editor_absoluteX="-16dp" />
+        tools:layout_editor_absoluteX="0dp" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="164dp"
+        android:layout_height="147dp"
+        android:layout_marginTop="28dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title"
+        app:srcCompat="@drawable/umbrella" />
 </androidx.constraintlayout.widget.ConstraintLayout>
