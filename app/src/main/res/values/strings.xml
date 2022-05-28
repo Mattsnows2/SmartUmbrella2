@@ -13,5 +13,9 @@
     <string name="fingerprint">Fingerprint</string>
     <string name="drop">drop</string>
     <string name="shell">Shell</string>
+    <string name="weatherTitle">Weather Update</string>
+    <string name="enterCityName">Enter City Name</string>
+    <string name="enterCountryCOde">Enter Country Code (Optional)</string>
+    <string name="get">Get</string>
 
 </resources>

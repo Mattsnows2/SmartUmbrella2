@@ -65,7 +65,7 @@ public class RegisterActivity extends AppCompatActivity {
 
                             updateUI(user);
 
-                            Intent intentStep1 = new Intent(RegisterActivity.this, UserChoice.class);
+                            Intent intentStep1 = new Intent(RegisterActivity.this, SplashScreen.class);
                             startActivity(intentStep1);
 
 

@@ -3,8 +3,13 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Cours_danemark/projectManagement/appAndroid/app/src/main/res/drawable-v24/background_pokedex_list_item.xml" value="0.1" />
+        <entry key="..\:/Cours_danemark/projectManagement/appAndroid/app/src/main/res/drawable-v24/background_pokedex_list_item_type.xml" value="0.1" />
+        <entry key="..\:/Cours_danemark/projectManagement/appAndroid/app/src/main/res/drawable-v24/background_side_nav_bar.xml" value="0.1" />
         <entry key="..\:/Cours_danemark/projectManagement/appAndroid/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.1565" />
         <entry key="..\:/Cours_danemark/projectManagement/appAndroid/app/src/main/res/drawable/background_side_nav_bar.xml" value="0.1645" />
+        <entry key="..\:/Cours_danemark/projectManagement/appAndroid/app/src/main/res/drawable/ic_baseline_fingerprint_24.xml" value="0.1" />
+        <entry key="..\:/Cours_danemark/projectManagement/appAndroid/app/src/main/res/layout/activity_account.xml" value="0.190625" />
         <entry key="..\:/Cours_danemark/projectManagement/appAndroid/app/src/main/res/layout/activity_home_page.xml" value="0.22" />
         <entry key="..\:/Cours_danemark/projectManagement/appAndroid/app/src/main/res/layout/activity_login.xml" value="0.14666666666666667" />
         <entry key="..\:/Cours_danemark/projectManagement/appAndroid/app/src/main/res/layout/activity_main.xml" value="0.290625" />

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">SmartUmbrella</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title">SMART UMBRELLA</string>
+    <string name="signin">Log ind</string>
+    <string name="signup">Tilmelde</string>
+    <string name="login">Log på</string>
+    <string name="email">E-mail</string>
+    <string name="password">Adgangskode</string>
+    <string name="Account">Konto</string>
+    <string name="weatherTitle">Vejropdatering</string>
+    <string name="enterCityName">Indtast bynavn</string>
+    <string name="enterCountryCOde">Indtast landekode (valgfrit)</string>
+    <string name="get">Få</string>
+</resources>
