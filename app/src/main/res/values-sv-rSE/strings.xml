@@ -13,4 +13,12 @@
     <string name="enterCityName">Ange ortsnamn</string>
     <string name="enterCountryCOde">GetEnter landskod (valfritt)</string>
     <string name="get">Skaffa sig</string>
+    <string name="change_language">Byte av språk</string>
+    <string name="help_amp_feedback">Hjälp och stöd</string>
+    <string name="settings">Parametrar</string>
+    <string name="locations">Plats</string>
+    <string name="weather">Väder</string>
+    <string name="umbrella">Paraply</string>
+    <string name="fingerprint">Fingeravtryck</string>
+    <string name="drop">Drop</string>
 </resources>

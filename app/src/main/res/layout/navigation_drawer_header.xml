@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
 
@@ -16,9 +17,10 @@
         android:layout_height="wrap_content"
         android:paddingTop="16dp"
         android:paddingBottom="16dp"
-        android:paddingLeft="16dp"
+        android:paddingStart="16dp"
         android:text="@string/shell"
         android:textSize="50sp"
-        android:textColor="@color/black"/>
+        android:textColor="@color/black"
+        tools:ignore="RtlSymmetry" />
 
 </LinearLayout>

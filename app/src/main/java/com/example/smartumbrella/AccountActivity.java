@@ -1,21 +1,13 @@
 package com.example.smartumbrella;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.app.Activity;
 import android.app.AlertDialog;
-import android.content.DialogInterface;
 import android.content.SharedPreferences;
 import android.content.res.Configuration;
 import android.os.Bundle;
-import android.util.Log;
-import android.view.View;
-import android.widget.ActionMenuView;
-import android.widget.AdapterView;
-import android.widget.ArrayAdapter;
 import android.widget.Button;
-import android.widget.Spinner;
-import android.widget.Toast;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 import java.util.Locale;
 
@@ -32,40 +24,32 @@ public class AccountActivity extends AppCompatActivity {
 
         changeLanguageButton = findViewById(R.id.buttonChangeLanguage);
 
-        changeLanguageButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                showChangeLanguageDialog();
-            }
-        });
+        changeLanguageButton.setOnClickListener(v -> showChangeLanguageDialog());
 
     }
     private void showChangeLanguageDialog(){
         final String [] listItems = {"English","Danish", "French","Swedish","Norwegians"};
         AlertDialog.Builder mBuilder = new AlertDialog.Builder(AccountActivity.this);
         mBuilder.setTitle("Choose language");
-        mBuilder.setSingleChoiceItems(listItems, -1, new DialogInterface.OnClickListener() {
-            @Override
-            public void onClick(DialogInterface dialog, int which) {
-                if(which==0){
-                    changeLanguage("en");
-                    recreate();
-                }else  if(which==1){
-                    changeLanguage("da");
-                    recreate();
-                }else  if(which==2){
-                    changeLanguage("fr");
-                    recreate();
-                }else  if(which==3){
-                    changeLanguage("sv");
-                    recreate();
-                }else  if(which==4){
-                    changeLanguage("se");
-                    recreate();
-                }
-
-                dialog.dismiss();
+        mBuilder.setSingleChoiceItems(listItems, -1, (dialog, which) -> {
+            if(which==0){
+                changeLanguage("en");
+                recreate();
+            }else  if(which==1){
+                changeLanguage("da");
+                recreate();
+            }else  if(which==2){
+                changeLanguage("fr");
+                recreate();
+            }else  if(which==3){
+                changeLanguage("sv");
+                recreate();
+            }else  if(which==4){
+                changeLanguage("se");
+                recreate();
             }
+
+            dialog.dismiss();
         });
         AlertDialog mDialog = mBuilder.create();
         mDialog.show();

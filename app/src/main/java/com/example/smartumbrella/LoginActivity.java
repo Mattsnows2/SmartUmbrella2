@@ -104,9 +104,7 @@ public class LoginActivity extends AppCompatActivity {
                 .build();
 
 
-        imageFigerPrint.setOnClickListener(view -> {
-            biometricPrompt.authenticate(promptInfo);
-        });
+        imageFigerPrint.setOnClickListener(view -> biometricPrompt.authenticate(promptInfo));
     }
 
 

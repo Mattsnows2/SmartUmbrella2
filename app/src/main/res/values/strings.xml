@@ -9,13 +9,19 @@
     <string name="email">Email</string>
     <string name="password">Password</string>
     <string name="Account">Account</string>
-    <string name="umbrella">Umbrella</string>
-    <string name="fingerprint">Fingerprint</string>
-    <string name="drop">drop</string>
-    <string name="shell">Shell</string>
     <string name="weatherTitle">Weather Update</string>
     <string name="enterCityName">Enter City Name</string>
     <string name="enterCountryCOde">Enter Country Code (Optional)</string>
     <string name="get">Get</string>
+    <string name="change_language">Change Language</string>
+    <string name="help_amp_feedback"><![CDATA[Help & Feedback]]></string>
+    <string name="settings">Settings</string>
+    <string name="locations">Locations</string>
+    <string name="weather">Weather</string>
+    <string name="tracker" translatable="false">Tracker</string>
+    <string name="umbrella">Umbrella</string>
+    <string name="fingerprint">Fingerprint</string>
+    <string name="drop">Drop</string>
+    <string name="shell" translatable="false">Shell</string>
 
 </resources>

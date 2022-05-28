@@ -13,4 +13,12 @@
     <string name="enterCityName">Indtast bynavn</string>
     <string name="enterCountryCOde">Indtast landekode (valgfrit)</string>
     <string name="get">Få</string>
+    <string name="change_language">Endring av språk</string>
+    <string name="help_amp_feedback">Hjelp og assistanse</string>
+    <string name="settings">Parametere</string>
+    <string name="locations">Plassering</string>
+    <string name="weather">Vær</string>
+    <string name="umbrella">Paraply</string>
+    <string name="fingerprint">Fingeravtrykk</string>
+    <string name="drop">Miste</string>
 </resources>

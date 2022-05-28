@@ -13,4 +13,12 @@
     <string name="enterCityName">Entrez le nom de la vile</string>
     <string name="enterCountryCOde">Entrez le code du pays (Optionnel)</string>
     <string name="get">Go</string>
+    <string name="change_language">Changer la  langue</string>
+    <string name="help_amp_feedback">Aide et assistance</string>
+    <string name="settings">Paramètres</string>
+    <string name="locations">Localisation</string>
+    <string name="weather">Météo</string>
+    <string name="umbrella">Parapluie</string>
+    <string name="fingerprint">Empreinte digitale</string>
+    <string name="drop">Goutte</string>
 </resources>
