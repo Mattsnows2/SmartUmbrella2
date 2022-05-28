@@ -9,5 +9,9 @@
     <string name="email">Email</string>
     <string name="password">Password</string>
     <string name="Account">Account</string>
+    <string name="weatherTitle">Weather Update</string>
+    <string name="enterCityName">Enter City Name</string>
+    <string name="enterCountryCOde">Enter Country Code (Optional)</string>
+    <string name="get">Get</string>
 
 </resources>

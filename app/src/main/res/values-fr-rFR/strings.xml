@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">SmartUmbrella</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title">SMART UMBRELLA</string>
+    <string name="signin">Se connecter</string>
+    <string name="signup">Créer un compte</string>
+    <string name="login">Connexion</string>
+    <string name="email">E-mail</string>
+    <string name="password">Mot de passe</string>
+    <string name="Account">Compte</string>
+    <string name="weatherTitle">Prevision météo</string>
+    <string name="enterCityName">Entrez le nom de la vile</string>
+    <string name="enterCountryCOde">Entrez le code du pays (Optionnel)</string>
+    <string name="get">Go</string>
+</resources>
