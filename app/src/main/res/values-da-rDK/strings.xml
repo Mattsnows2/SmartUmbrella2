@@ -21,4 +21,9 @@
     <string name="umbrella">Paraply</string>
     <string name="fingerprint">Fingeravtrykk</string>
     <string name="drop">Miste</string>
+    <string name="submit">Validér</string>
+    <string name="confirm_delete">Bekræft Sletning</string>
+    <string name="r_u_sure">Er du sikker?</string>
+    <string name="delete_account">Slet konto</string>
+
 </resources>

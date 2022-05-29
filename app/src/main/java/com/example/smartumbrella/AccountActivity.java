@@ -6,27 +6,102 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.res.Configuration;
 import android.os.Bundle;
+import android.util.Log;
+import android.view.ContextThemeWrapper;
 import android.view.KeyEvent;
 import android.widget.Button;
+import android.widget.EditText;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 
 import java.util.Locale;
 
 public class AccountActivity extends AppCompatActivity {
 
+    androidx.appcompat.app.AlertDialog.Builder builder;
 
   Button changeLanguageButton;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         System.out.println("sfg");
         loadLocale();
+
+        FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
+        if (user != null) {
+            "".isEmpty();
+        } else {
+            Log.i("y2", "pas connect");
+        }
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_account);
 
         changeLanguageButton = findViewById(R.id.buttonChangeLanguage);
 
         changeLanguageButton.setOnClickListener(v -> showChangeLanguageDialog());
+
+        EditText email = (EditText) findViewById(R.id.editEmailText);
+        EditText password = (EditText) findViewById(R.id.editTextPassword);
+        builder = new androidx.appcompat.app.AlertDialog.Builder(new ContextThemeWrapper(this, R.style.AlertDialogCustom));
+
+        Button submit = (Button) findViewById(R.id.submit);
+        Button delete = (Button) findViewById(R.id.delete_account);
+
+        email.setText(user.getEmail());
+
+        submit.setOnClickListener(v -> {
+            if (email.getText().toString().isEmpty() || password.getText().toString().isEmpty()) {
+                Toast.makeText(getApplicationContext(), "Enter the Data", Toast.LENGTH_SHORT).show();
+            } else {
+                final String[] message = {"Data changed"};
+                if (!email.getText().toString().isEmpty()) {
+                    if (email.getText().toString().equals(user.getEmail())) {
+                        message[0] += " Current Email is equal to new Email" + "\n";
+                    } else {
+                        user.updateEmail(email.getText().toString()).addOnCompleteListener(task -> {
+                            if (task.isSuccessful()) {
+                                message[0] += " New Email is " + email.getText().toString() + "\n";
+                            }
+                        });
+                    }
+                }
+                if (!password.getText().toString().isEmpty()) {
+                    user.updatePassword(password.getText().toString()).addOnCompleteListener(task -> {
+                        if (task.isSuccessful()) {
+                            message[0] += " New password is " + password.getText().toString() + "\n";
+                            password.getText().clear();
+                        }
+                    });
+                }
+                Toast.makeText(getApplicationContext(), message[0], Toast.LENGTH_LONG).show();
+            }
+        });
+
+        delete.setOnClickListener(v -> {
+            builder.setMessage(R.string.r_u_sure).setTitle(R.string.confirm_delete)
+                    .setCancelable(false)
+                    .setPositiveButton("Yes", (dialog, id) -> user.delete().addOnCompleteListener(task -> {
+                        Intent intentLogin = new Intent(AccountActivity.this, HomePage.class);
+                        startActivity(intentLogin);
+                        dialog.cancel();
+                        Toast.makeText(getApplicationContext(), "Account successfully deleted",
+                                Toast.LENGTH_SHORT).show();
+                    }))
+                    .setNegativeButton("No", (dialog, id) -> {
+                        //  Action for 'NO' Button
+                        dialog.cancel();
+                        Toast.makeText(getApplicationContext(), "Action canceled",
+                                Toast.LENGTH_SHORT).show();
+                    });
+            //Creating dialog box
+            androidx.appcompat.app.AlertDialog alert = builder.create();
+            alert.show();
+        });
+
 
     }
     private void showChangeLanguageDialog(){
@@ -50,12 +125,10 @@ public class AccountActivity extends AppCompatActivity {
                 changeLanguage("se");
                 restartActivity();
             }
-
             dialog.dismiss();
         });
         AlertDialog mDialog = mBuilder.create();
         mDialog.show();
-
     }
 
 

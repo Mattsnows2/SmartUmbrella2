@@ -21,4 +21,9 @@
     <string name="umbrella">Parapluie</string>
     <string name="fingerprint">Empreinte digitale</string>
     <string name="drop">Goutte</string>
+    <string name="submit">Valider</string>
+    <string name="confirm_delete">Confirmer la supression</string>
+    <string name="r_u_sure">Êtes-vous sûr ?</string>
+    <string name="delete_account">Supprimer mon compte</string>
+
 </resources>

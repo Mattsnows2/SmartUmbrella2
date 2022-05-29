@@ -13,7 +13,6 @@
     <string name="enterCityName">Skriv inn bynavn</string>
     <string name="enterCountryCOde">Skriv inn landskode (valgfritt)</string>
     <string name="get">Få</string>
-
     <string name="change_language">Byte av språk</string>
     <string name="help_amp_feedback">Hjälp och stöd</string>
     <string name="settings">Parametrar</string>
@@ -22,4 +21,9 @@
     <string name="umbrella">Paraply</string>
     <string name="fingerprint">Fingeravtryck</string>
     <string name="drop">Drop</string>
+    <string name="submit">Validere</string>
+    <string name="confirm_delete">Bekreft sletting</string>
+    <string name="r_u_sure">Er du sikker ?</string>
+    <string name="delete_account">Slett konto</string>
+
 </resources>

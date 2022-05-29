@@ -21,4 +21,8 @@
     <string name="umbrella">Paraply</string>
     <string name="fingerprint">Fingeravtryck</string>
     <string name="drop">Drop</string>
+    <string name="submit">Validera</string>
+    <string name="confirm_delete">Bekräfta Radera</string>
+    <string name="r_u_sure">Är du säker?</string>
+    <string name="delete_account">Ta bort konto</string>
 </resources>
