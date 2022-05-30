@@ -73,13 +73,13 @@
 
     <ImageView
         android:id="@+id/imageView3"
-        android:layout_width="151dp"
-        android:layout_height="140dp"
+        android:layout_width="255dp"
+        android:layout_height="163dp"
         android:layout_marginTop="24dp"
+        android:contentDescription="@string/umbrella"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/title"
-        app:srcCompat="@drawable/umbrella"
-        android:contentDescription="@string/umbrella" />
+        app:srcCompat="@drawable/logo" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
