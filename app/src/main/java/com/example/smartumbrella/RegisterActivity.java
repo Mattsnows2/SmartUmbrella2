@@ -43,19 +43,12 @@ public class RegisterActivity extends AppCompatActivity {
         mAuth.createUserWithEmailAndPassword(email,password)
                 .addOnCompleteListener(this, task -> {
                     if(task.isSuccessful()){
-                        Log.d("yo","createWithEmail:success");
+
                         FirebaseUser user = mAuth.getCurrentUser();
-
-
-
                         updateUI(user);
 
                         Intent intentStep1 = new Intent(RegisterActivity.this, SplashScreen.class);
                         startActivity(intentStep1);
-
-
-
-
 
                     }else{
                         Log.w("yo", "createWithEmail:failure", task.getException());

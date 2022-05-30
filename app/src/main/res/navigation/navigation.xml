@@ -8,18 +8,18 @@
     <fragment
         android:id="@+id/nav_weather"
         android:name="com.example.smartumbrella.WeatherFragment"
-        android:label="Weather"
+        android:label="@string/weather"
         tools:layout="@layout/fragment_weather" />
     <fragment
         android:id="@+id/nav_tracker"
         android:name="com.example.smartumbrella.TrackerFragment"
-        android:label="Tracker"
+        android:label="@string/tracker"
         tools:layout="@layout/fragment_tracker" />
 
     <fragment
         android:id="@+id/nav_help_and_feedback"
         android:name="com.example.smartumbrella.HelpAndFeedbackFragment"
-        android:label="Help and feedback"
+        android:label="@string/help_amp_feedback"
         tools:layout="@layout/fragment_help_and_feedback" />
 
     <fragment

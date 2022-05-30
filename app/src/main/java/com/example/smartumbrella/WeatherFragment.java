@@ -1,6 +1,9 @@
 package com.example.smartumbrella;
 
+import android.app.NotificationChannel;
+import android.app.NotificationManager;
 import android.graphics.Color;
+import android.os.Build;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -12,6 +15,8 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
+import androidx.core.app.NotificationCompat;
+import androidx.core.app.NotificationManagerCompat;
 import androidx.fragment.app.Fragment;
 
 import com.android.volley.Request;
@@ -42,6 +47,8 @@ public class WeatherFragment extends Fragment {
         etCity = view.findViewById(R.id.etCity);
         etCountry = view.findViewById(R.id.etCountry);
         tvResult = view.findViewById(R.id.tvResult);
+
+
 
         Button getBtn = (Button) view.findViewById(R.id.btnGet);
         getBtn.setOnClickListener(v -> {
@@ -91,6 +98,20 @@ public class WeatherFragment extends Fragment {
                         tvResult.setText(output);
                         Log.d("output",output);
 
+                        if(description.contains("rain")){
+                            createNotificationChannel();
+
+                            NotificationCompat.Builder builder = new NotificationCompat.Builder(getActivity().getApplicationContext(), "lemubitA");
+                            builder.setContentTitle("Warning");
+                            builder.setContentText("It's raining outside");
+                            builder.setSmallIcon(R.drawable.ic_launcher_background);
+                            builder.setAutoCancel(true);
+
+                            NotificationManagerCompat notificationManagerCompat  = NotificationManagerCompat.from(getActivity());
+                            notificationManagerCompat.notify(100, builder.build());
+
+                        }
+
 
                     }catch (JSONException e){
                         e.printStackTrace();
@@ -101,5 +122,19 @@ public class WeatherFragment extends Fragment {
             }
         });
         return view;
+    }
+
+    private void createNotificationChannel(){
+
+        if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.O){
+           CharSequence name= "studentChannel";
+           String description ="Channel for student notification";
+           int importance = NotificationManager.IMPORTANCE_DEFAULT;
+           NotificationChannel channel = new NotificationChannel("lemubitA", name, importance);
+           channel.setDescription(description);
+
+           NotificationManager notificationManager = getActivity().getSystemService(NotificationManager.class);
+           notificationManager.createNotificationChannel(channel);
+        }
     }
 }

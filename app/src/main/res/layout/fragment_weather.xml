@@ -34,8 +34,8 @@
             android:layout_marginBottom="10dp"
             android:ems="10"
             android:hint="@string/enterCityName"
-            android:inputType="textPersonName"
             android:importantForAutofill="no"
+            android:inputType="textPersonName"
             android:minHeight="48dp" />
 
         <EditText
