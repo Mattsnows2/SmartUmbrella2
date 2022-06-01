@@ -56,6 +56,9 @@ dependencies {
     implementation 'androidx.biometric:biometric:1.1.0'
     implementation 'com.google.android.material:material:1.0.0-beta01'
     implementation "androidx.core:core:1.6.0"
+    implementation "com.google.android.gms:play-services-location:17.0.0"
+    implementation 'com.google.maps.android:android-maps-utils:2.2.3'
+    implementation 'com.google.maps.android:maps-utils-ktx:3.3.0'
    // implementation 'com.google.android.gms:play-services-ads:20.3.0'
 
 }

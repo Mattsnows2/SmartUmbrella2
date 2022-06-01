@@ -25,4 +25,5 @@
     <string name="confirm_delete">Bekräfta Radera</string>
     <string name="r_u_sure">Är du säker?</string>
     <string name="delete_account">Ta bort konto</string>
+    <string name="trackUmbrella">Track my umbrella</string>
 </resources>

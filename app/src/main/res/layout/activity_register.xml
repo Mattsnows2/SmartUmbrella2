@@ -51,7 +51,7 @@
         android:layout_marginTop="48dp"
         android:backgroundTint="#677dac"
         android:drawableTop="@drawable/rocket"
-        android:text="register"
+        android:text="@string/signup"
         android:textColor="@color/white"
         app:layout_constraintTop_toBottomOf="@+id/passwordEditText"
         tools:layout_editor_absoluteX="0dp" />

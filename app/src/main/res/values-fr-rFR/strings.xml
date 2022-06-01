@@ -25,5 +25,6 @@
     <string name="confirm_delete">Confirmer la supression</string>
     <string name="r_u_sure">Êtes-vous sûr ?</string>
     <string name="delete_account">Supprimer mon compte</string>
+    <string name="trackUmbrella">Track my umbrella</string>
 
 </resources>
