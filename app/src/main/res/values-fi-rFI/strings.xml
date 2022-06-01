@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">SmartUmbrella</string>
+    <string name="hello_blank_fragment">Hei tyhjä fragmentti</string>
+    <string name="title">Älykäs sateenvarjo</string>
+    <string name="signin">Kirjaudu sisään</string>
+    <string name="signup">Kirjaudu</string>
+    <string name="login">Kirjaudu sisään</string>
+    <string name="email">Sähköposti</string>
+    <string name="password">Salasana</string>
+    <string name="Account">Tili</string>
+    <string name="weatherTitle">Sääpäivitys</string>
+    <string name="enterCityName">Anna kaupungin nimi</string>
+    <string name="enterCountryCOde">Anna maakoodi (valinnainen)</string>
+    <string name="get">Saada</string>
+    <string name="change_language">Vaihda kieltä</string>
+    <string name="help_amp_feedback"><![CDATA[Help & Feedback]]></string>
+    <string name="settings">asetukset</string>
+    <string name="locations">Sijainnit</string>
+    <string name="weather">Sää</string>
+    <string name="tracker" translatable="false">Tracker</string>
+    <string name="umbrella">Sateenvarjo</string>
+    <string name="fingerprint">Sormenjälki</string>
+    <string name="drop">Pudota</string>
+    <string name="shell" translatable="false">Shell</string>
+    <string name="submit">Lähetä</string>
+    <string name="confirm_delete">Vahvista poistaminen</string>
+    <string name="r_u_sure">Oletko varma ?</string>
+    <string name="delete_account">Poista tili</string>
+    <string name="trackUmbrella">Seuraa sateenvarjoani</string>
+</resources>

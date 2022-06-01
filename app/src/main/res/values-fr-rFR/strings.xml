@@ -10,7 +10,7 @@
     <string name="password">Mot de passe</string>
     <string name="Account">Compte</string>
     <string name="weatherTitle">Prevision météo</string>
-    <string name="enterCityName">Entrez le nom de la vile</string>
+    <string name="enterCityName">Entrez le nom de la ville</string>
     <string name="enterCountryCOde">Entrez le code du pays (Optionnel)</string>
     <string name="get">Go</string>
     <string name="change_language">Changer la  langue</string>

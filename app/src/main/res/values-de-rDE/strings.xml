@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">SmartUmbrella</string>
+    <string name="hello_blank_fragment">Hallo leeres Fragment</string>
+    <string name="title">SMARTER REGENSCHIRM</string>
+    <string name="signin">Einloggen</string>
+    <string name="signup">Anmelden</string>
+    <string name="login">Anmeldung</string>
+    <string name="email">Email</string>
+    <string name="password">Passwort</string>
+    <string name="Account">Konto</string>
+    <string name="weatherTitle">Wetter-Update</string>
+    <string name="enterCityName">Geben Sie den Namen der Stadt ein</string>
+    <string name="enterCountryCOde">Ländercode eingeben (optional)</string>
+    <string name="get">Erhalten</string>
+    <string name="change_language">Sprache ändern</string>
+    <string name="help_amp_feedback"><![CDATA[Help & Feedback]]></string>
+    <string name="settings">Einstellungen</string>
+    <string name="locations">Standorte</string>
+    <string name="weather">Wetter</string>
+    <string name="tracker" translatable="false">Tracker</string>
+    <string name="umbrella">Regenschirm</string>
+    <string name="fingerprint">Fingerabdruck</string>
+    <string name="drop">Fallen</string>
+    <string name="shell" translatable="false">Shell</string>
+    <string name="submit">Einreichen</string>
+    <string name="confirm_delete">Löschen bestätigen</string>
+    <string name="r_u_sure">Bist du dir sicher ?</string>
+    <string name="delete_account">Konto löschen</string>
+    <string name="trackUmbrella">Verfolgen Sie meinen Regenschirm</string>
+</resources>

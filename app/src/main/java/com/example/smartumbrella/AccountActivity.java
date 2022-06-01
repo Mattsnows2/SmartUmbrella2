@@ -105,7 +105,7 @@ public class AccountActivity extends AppCompatActivity {
 
     }
     private void showChangeLanguageDialog(){
-        final String [] listItems = {"English","Danish", "French","Swedish","Norwegians"};
+        final String [] listItems = {"English","Danish", "French","Swedish","Norwegians","Finnish", "German"};
         AlertDialog.Builder mBuilder = new AlertDialog.Builder(AccountActivity.this);
         mBuilder.setTitle("Choose language");
         mBuilder.setSingleChoiceItems(listItems, -1, (dialog, which) -> {
@@ -123,6 +123,12 @@ public class AccountActivity extends AppCompatActivity {
                 restartActivity();
             }else  if(which==4){
                 changeLanguage("se");
+                restartActivity();
+            } else  if(which==5){
+                changeLanguage("fi");
+                restartActivity();
+            }else  if(which==6){
+                changeLanguage("de");
                 restartActivity();
             }
             dialog.dismiss();
